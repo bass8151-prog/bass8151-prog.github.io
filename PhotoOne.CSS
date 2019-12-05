@@ -3,7 +3,7 @@
     min-height: 100vh;
     min-width: 100%;
     grid-template-columns: .5fr 1fr 1fr;
-    grid-template-rows: 25vh 8-vh 25vh;
+    grid-template-rows: 25vh 25vh;
     grid-template-areas:
         "header header header"
         "sidebar main main"
@@ -11,12 +11,16 @@
     ;
 }
 
-
 .header {
-   
     background-color: black;
     grid-area: header;
 }
+
+.button ul {
+    margin:0;
+    padding: 0;
+}
+
 
 .main {
     color: white;
@@ -33,19 +37,12 @@
 
 .button { 
     list-style: none;
-    padding: 0;
-  margin: 0;
     
     
-}
-
-.button ul {
-    margin:0;
-    padding: 0;
 }
 
 .button li {
- display: block;
+ display: inline-block;
     width: 100%;
     padding: 30px 30px;
     margin-bottom: 15px;
@@ -58,7 +55,6 @@
     text-align: center;
     border: black 1px solid;
 }
-
 
 H1 {
     color: red;
@@ -73,8 +69,11 @@ H1 {
 }
 
 .AhoSens {
-    width: 20%;
-    margin: 15px;
+    width: 60%;
+    height: auto;
+    margin-left: 20%;
+    margin-top: 1%;
+    margin-right: 20%;
     border: 10px solid red;
     float: left;
 }
@@ -96,6 +95,8 @@ box-sizing: border-box;
     color: red;
     font-size: 30px;
     margin-left: 15px;
+    margin-top: 60px;
+    text-align: center;
 }
 
 @media only screen and (max-width:700px){
@@ -141,11 +142,11 @@ box-sizing: border-box;
 
 .button li {
  display: inline-block;
-    width: 32%;
+    width: 24%;
     cursor: pointer;
     box-sizing: border-box;
     text-decoration: none;
-    height: 1vh;
+    height: .5vh;
     text-align: center;
     padding: 7%;
     border: black 1px solid;
@@ -155,20 +156,21 @@ H1 {
     color: red;
     font-size: 5vh;
     margin-bottom: 15px;
-    margin-top: 3%;
+    margin-top: 5px;
 }
 
 .logo {
     width: 10%;
-    margin-top: 2%;
    float:left;
 }
 
 .AhoSens {
-    width: 20%;
-    margin: 3%;
+    width: 60%;
+    margin-left: 20%;
+    margin-right: 20%;
     border: 5px solid red;
-    float: left;
+    float:left
+        
 }
 
 .button li a {

@@ -11,12 +11,16 @@
     ;
 }
 
-
 .header {
-   
     background-color: black;
     grid-area: header;
 }
+
+.button ul {
+    margin:0;
+    padding: 0;
+}
+
 
 .main {
     color: white;
@@ -33,19 +37,14 @@
 
 .button { 
     list-style: none;
-    padding: 0;
-  margin: 0;
+    padding-bottom: 15px;
+    margin-bottom: 15px;
     
     
-}
-
-.button ul {
-    margin:0;
-    padding: 0;
 }
 
 .button li {
- display: block;
+ display: inline-block;
     width: 100%;
     padding: 30px 30px;
     margin-bottom: 15px;
@@ -58,7 +57,6 @@
     text-align: center;
     border: black 1px solid;
 }
-
 
 H1 {
     color: red;
@@ -73,7 +71,8 @@ H1 {
 }
 
 .AhoSens {
-    width: 20%;
+    width: 25%;
+    height: auto;
     margin: 15px;
     border: 10px solid red;
     float: left;
@@ -96,6 +95,12 @@ box-sizing: border-box;
     color: red;
     font-size: 30px;
     margin-left: 15px;
+    margin-top: 60px;
+}
+
+.article a {
+    color: red;
+    text-decoration: none;
 }
 
 @media only screen and (max-width:700px){
@@ -134,20 +139,20 @@ box-sizing: border-box;
 
 
 .button { 
-    list-style: none;
+    list-style: none
     
     
 }
 
 .button li {
  display: inline-block;
-    width: 32%;
+    width: 24%;
     cursor: pointer;
     box-sizing: border-box;
     text-decoration: none;
     height: 1vh;
     text-align: center;
-    padding: 7%;
+    padding-bottom: %;
     border: black 1px solid;
 }
 
@@ -155,18 +160,17 @@ H1 {
     color: red;
     font-size: 5vh;
     margin-bottom: 15px;
-    margin-top: 3%;
+    margin-top: 5px;
 }
 
 .logo {
     width: 10%;
-    margin-top: 2%;
    float:left;
 }
 
 .AhoSens {
     width: 20%;
-    margin: 3%;
+    margin: %;
     border: 5px solid red;
     float: left;
 }
